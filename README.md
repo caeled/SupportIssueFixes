@@ -20,12 +20,16 @@ Rules for everything in this repo: back up before changing anything, change one 
 | # | Tool | Issue it fixes |
 |---|------|----------------|
 | 1 | [Demote-CloudShellExtensions](tools/Demote-CloudShellExtensions/) | Windows Explorer and Open/Save dialogs hang on "Working on it…" because stacked cloud-sync clients (OneDrive, Dropbox, iCloud) have loaded shell extensions into every folder view and file dialog. |
+| 2 | [Handoff-RdpSessionToConsole](tools/Handoff-RdpSessionToConsole/) | Closing RDP leaves the user desktop disconnected instead of attached to the physical console, breaking streaming apps such as Sunshine/Moonlight. |
+| 3 | [Lock-RemoteAdminToTrustedNets](tools/Lock-RemoteAdminToTrustedNets/) | RDP, WinRM, RDP Shadow, and optional custom remote-admin allow rules are open to untrusted remote addresses despite careful administration elsewhere. |
 
 ## Case studies
 
 | Case | Story |
 |------|-------|
 | [LeighNSteve Explorer hang](case-studies/LeighNSteve-Explorer-Incident-Writeup.pdf) | Months of a nearly unusable machine and a ~6-hour 2 GB USB copy, traced to shell-extension stackup — not malware, not dying hardware. Fixed overnight without a Windows reinstall. The incident behind tool #1. |
+| [RDP disconnect breaks Sunshine/Moonlight](case-studies/rdp-disconnect-breaks-sunshine-moonlight.md) | RDP looked like a firewall problem, but the desktop was disconnected rather than on the physical console. An event-triggered `tscon` handoff fixed that layer. The incident behind tool #2. |
+| [Home-server firewall lockdown](case-studies/home-server-firewall-lockdown.md) | Duplicate no-scope WinRM and app-created allow rules quietly bypassed the intended trust boundary. A backed-up, reversible lockdown narrowed RDP, WinRM, RDP Shadow, and a custom relay. The incident behind tool #3. |
 
 ---
 
