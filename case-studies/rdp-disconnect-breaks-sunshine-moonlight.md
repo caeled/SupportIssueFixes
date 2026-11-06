@@ -74,4 +74,6 @@ The display-resolution attempt deserves a footnote rather than a success claim: 
 
 **TODO for Steven:** The source files do not establish whether Kodi launch was re-tested after the working handoff, or whether Moonlight streaming was re-tested end to end after the display changes. Confirm both before treating those as verified outcomes.
 
+The full story, including the GitHub access snag during publishing, is on LinkedIn: [The Firewall Wasn't the Problem (and Neither Was the Code)](https://www.linkedin.com/pulse/firewall-wasnt-problem-neither-code-steven-powell-47tbc/).
+
 The generalized tool and uninstall instructions are in [Handoff-RdpSessionToConsole](../tools/Handoff-RdpSessionToConsole/).

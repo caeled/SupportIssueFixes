@@ -55,4 +55,6 @@ The targeted undo restores only the recorded rules' previous `RemoteAddress` val
 - RDP Shadow is easy to forget when making an RDP port list.
 - Record the old value before changing it. A good undo should not depend on remembering the original scope.
 
+The full story, including the GitHub access snag during publishing, is on LinkedIn: [The Firewall Wasn't the Problem (and Neither Was the Code)](https://www.linkedin.com/pulse/firewall-wasnt-problem-neither-code-steven-powell-47tbc/).
+
 The generalized tool is in [Lock-RemoteAdminToTrustedNets](../tools/Lock-RemoteAdminToTrustedNets/).
