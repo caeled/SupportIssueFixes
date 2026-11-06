@@ -2,6 +2,10 @@
 
 A growing collection of field fixes for real support issues — the kind that show up on actual machines, get misdiagnosed for months, and turn out to have a specific, findable cause.
 
+![Grok Bot, the night shift: repair complete, the disabled extensions bagged and labeled](case-studies/grokbot-overnight-fix.jpg)
+
+*The first fix in this repo was made overnight by Grok Bot, verified the next morning, and written up so it can be replicated. The bot gets the cover art. (AI-generated image.)*
+
 Each tool is packaged the same way:
 
 - **The issue** — symptoms as a user actually experiences them
